@@ -68,5 +68,7 @@ for r in results:
 
 print(description_list)
 description_save = '\n'.join(description_list)
-with open('descricoes_vagas.txt', 'w') as f:
+with open('descricoes_vagas.txt', 'w', encoding='utf-8') as f:
     f.write(description_save)
+    f.close
+driver.quit()
